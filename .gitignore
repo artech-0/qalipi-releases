@@ -1,0 +1,6 @@
+# Track public documentation only. Attach app packages to GitHub Releases.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/CHANGELOG.md
