@@ -4,7 +4,9 @@ Qalipi is an Android ebook and comic reader in early development. It reads EPUB,
 
 ## Downloads
 
-No app releases have been published yet. Downloadable APKs will be attached to this repository's GitHub Releases, with release notes and SHA-256 checksums for each version.
+Download the latest APK from [Releases](../../releases). Each release has release notes and a SHA-256 checksum file. This is an alpha signed with a debug key.
+
+Installing over 0.0.1-alpha needs the app's data cleared first (Android Settings, Apps, Qalipi, Storage, Clear data), because the database changed.
 
 Requires Android 8.0 (API 26) or newer.
 

@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.0.2-alpha (2026-11-10)
 
 Folder library. Still an alpha with a debug key.
 
