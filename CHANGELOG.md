@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.0.4-alpha (2026-11-11)
+
+Storage, page numbers and fixes. Still an alpha with a debug key. Updating from 0.0.3-alpha keeps your data.
+
+- Remove books: long-press a book in the library. "Remove from Qalipi" frees everything Qalipi stored for it: a book you opened from another app is deleted along with Qalipi's copy; a book from one of your folders is hidden and its temporary copies are cleared, and the file stays in the folder. Hidden books are listed in Settings, Folders, Hidden books, with Unhide. Opening the same file again also brings it back.
+- "Remove and delete from device" for books in your folders deletes the file itself, after a second confirmation. The first time, Android asks you to pick the same folder again to allow changes to it. If a book has several copies and some cannot be deleted, the book is hidden and you are told how many remain.
+- File sizes: the list view shows each book's size next to its author, and a new "Size, largest first" sort puts the heaviest books on top.
+- Settings, Storage: what Qalipi keeps on your phone (books opened from other apps, and temporary copies), Clear cache, the ten largest books with Remove, and "Delete imported copies of finished books".
+- Page numbers for EPUB: a book shows "p. 214 / 612 est. · 37 %", counted from the book's length (an estimate that does not change with text size). A book that carries the publisher's own page list shows the printed page instead, such as "p. 214" or "p. xiv". Settings, Display, "Page numbers in books" turns this off.
+- Go to page: a bottom-bar button for EPUB, PDF and comics. Type a page number, or the printed page for books with a page list. Typing a page number in the in-book search also offers the jump. A "Back to" chip returns you.
+- Bookmarks: each row has a small delete icon, and swiping toward it also deletes, both with Undo. Neither moves your place in the book.
+- Fix: choosing landscape in the reader no longer turns back to portrait when the phone rotates. The same fix keeps a brightness you set.
+- The reading bar scrolls sideways when its buttons do not fit.
+
+Known limitations:
+
+- Most of this release has only been tested by automated tests, not on a phone: removal and delete from device, the Storage screen, page numbers and printed pages (no real publisher EPUB with a page list was tried), Go to page, and the landscape fix.
+- A printed page's place inside a chapter is worked out from the text, so it can be a little early or late.
+- Password-protected PDFs and DRM-protected books cannot be opened.
+- No highlights or notes, shelves, sync or backup yet. Buttons are mostly text, not icons.
+- This build is signed with a debug key.
+
+Requires Android 8.0 (API 26) or newer.
+
 ## 0.0.3-alpha (2026-11-10)
 
 Reading comfort, comics and search. Still an alpha with a debug key.
