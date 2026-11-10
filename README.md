@@ -1,6 +1,6 @@
-# Quire
+# Qalipi
 
-Quire is an Android ebook and comic reader in early development. EPUB reading is currently implemented; additional formats and features are planned.
+Qalipi is an Android ebook and comic reader in early development. It reads EPUB, PDF and CBZ comics, with Basic, Night and Dark themes. More formats and features are planned.
 
 ## Downloads
 
