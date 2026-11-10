@@ -1,5 +1,31 @@
 # Changelog
 
+## 0.0.3-alpha (2026-11-10)
+
+Reading comfort, comics and search. Still an alpha with a debug key.
+
+- Text settings (Aa in the book's top bar): font (Literata, Source Serif 4, Atkinson Hyperlegible, Inter, OpenDyslexic or the book's own), size, line height, margins, alignment, publisher styles, paged or scroll. "This book only" keeps a look for one book. Changes apply live.
+- Page turns: a 3x3 tap grid (right side forward, left side back, middle menu), Volume Down for next and Volume Up for previous while the bar is hidden, and an end-of-book card that marks the book finished, with Undo.
+- Settings (Library, More, Settings): Controls lets you set what each tap zone does for books and for PDFs and comics, pick a layout (Thirds, L-shape, Kindle, Edge) and set the volume keys. Display sets how long the screen stays on and the orientation.
+- Reading comfort: drag along the left edge to change brightness (saved for each theme, with a button to go back to the system brightness), keep the screen on for 5 min, 15 min or always, and cycle Auto, Portrait and Landscape from the bar.
+- Library search: find books by title, author or series as you type, ignoring case and accents.
+- In-book search for EPUB: matches appear as they are found, with the chapter and the words around them. Tap one to see it marked in the page, then step through matches.
+- Bookmarks for books, PDFs and comics: a ribbon marks the page, a Bookmarks tab lists them, swipe to delete (with Undo), long-press to rename.
+- Comics: right-to-left reading for manga (set by ComicInfo, a default in Controls, or per comic), fit modes (screen, width, height, original), a page background (black, white, grey or auto from the page margins), a warm filter, and a page thumbnail grid.
+- CBR (RAR 4 and 5) and CB7 comics open, as well as CBZ. Files are recognised by what is inside, not their name.
+- CBZ comics from folders get their first-page cover again on phones where the 0.0.2-alpha scan failed with "Can't be opened".
+- The database is now frozen: from this version on, updates keep your data.
+
+Known limitations:
+
+- Installing over 0.0.2-alpha needs the app's data cleared first (Android Settings, Apps, Qalipi, Storage, Clear data): the 0.0.2-alpha database cannot be upgraded.
+- CBR and RAR5 comics, the end card, the Controls screen and the screen-on timer have only been tested by automated tests, not on a phone. Large PDFs (900 MB) were not timed.
+- Password-protected PDFs and DRM-protected books cannot be opened.
+- No highlights or notes, shelves, sync or backup yet. Buttons are text, not icons.
+- This build is signed with a debug key.
+
+Requires Android 8.0 (API 26) or newer.
+
 ## 0.0.2-alpha (2026-11-10)
 
 Folder library. Still an alpha with a debug key.
