@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.0.5-beta (2026-11-11)
+
+First beta, and the first build signed with a real release key. The app now installs as `com.rouge.expero`.
+
+**Read this before installing:** this build has a new package name, so Android treats it as a different app from 0.0.4-alpha and earlier. It installs next to the old one and does not update it. Your library, reading positions and bookmarks do not carry over: add your book folders again in Settings, Folders. When you are happy with it, uninstall the old "Qalipi" from Android Settings, Apps. Updates from this version on keep your data, because every release will be signed with the same key.
+
+- Fix: typing a page number in the in-book search crashed the reader. It now offers "Go to page".
+- Fix: a "Back to ..." button no longer appears every time a book opens or the screen rotates. It only appears after you jump somewhere (a link, a search result, Contents, Go to page, a bookmark, the slider).
+- Page numbers are now one kind per book. A book shows the publisher's printed page numbers only when its page list covers almost all of the book; otherwise the whole book shows estimated pages. This fixes a bundle whose page list covered only its last part, where "Go to page 55" jumped to the end. The bar shows only the percent for a moment while the page numbers are worked out, then the page number appears.
+- Settings, Display, "Page numbers in books" now has three choices: Printed (the default, with estimates where a book has no full page list), Estimated, and Off. If you had turned the old switch off, it stays off.
+
+Known limitations:
+
+- Tested on one phone, with EPUB and PDF: search, Go to page for EPUB and PDF, and landscape. Not tried on a phone: comics, the new page-number choices, the stray "Back to" fix on every book type, removal and Storage.
+- Dark theme inverts the colours of PDFs, which makes colour comics saved as PDF look wrong. Turn off "PDF colours" in the reader bar, or use Basic theme.
+- A printed page's place inside a chapter is worked out from the text, so it can be a little early or late.
+- Password-protected PDFs and DRM-protected books cannot be opened.
+- No highlights or notes, shelves, sync or backup yet. Buttons are mostly text, not icons.
+- Not on Google Play. GitHub is the place to get Qalipi.
+
+Requires Android 8.0 (API 26) or newer.
+
 ## 0.0.4-alpha (2026-11-11)
 
 Storage, page numbers and fixes. Still an alpha with a debug key. Updating from 0.0.3-alpha keeps your data.
