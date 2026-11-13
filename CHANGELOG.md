@@ -1,5 +1,37 @@
 # Changelog
 
+## 0.0.6-beta (2026-11-13)
+
+Shelves, highlights, a dictionary and a lot of library work. Updating from 0.0.5-beta keeps your data: the database is upgraded on first launch.
+
+**New in the library**
+
+- Books are grouped by the folder they are in (the default), or by shelves you make yourself. Switch with Folders / Shelves under the title. Sections fold up with a tap.
+- Shelves: make, rename and delete them. Long-press a book to start selecting; tap more books, then Shelf to put them all on shelves (or take them off), or Remove to remove them together. A book can be on several shelves.
+- Every started book shows its read percentage on the cover, in a dark label that is easy to see. Finished books say "Finished".
+
+**New in the reader**
+
+- Highlights (EPUB): select text and choose Highlight. Five colours; tap a highlight to change its colour, copy it or delete it. Highlights are listed with your bookmarks, in reading order, each with its page and percentage. Highlighting a page also bookmarks it.
+- Look up: select a word and choose Look up. Settings, Dictionary chooses where it goes: a dictionary app you have installed (the default), an offline dictionary, or online (dictionaryapi.dev, only the word you look up is sent). You can switch in the look-up sheet.
+- Page-turn animation: a switch in the Aa sheet. For paged EPUBs, tapping or pressing a key to turn the page slides the old page away. Swipes keep their own animation.
+
+**Fixes**
+
+- CBR and CB7 comics (RAR and 7z files) now import, show a cover and open. Opening a comic Qalipi cannot read now says why, and "Open with" shows its result.
+
+**Things to know**
+
+- Qalipi now asks for the internet permission. It is used for two things, both only when you ask: the online look-up, and downloading the offline dictionary. Nothing else goes online.
+- The offline dictionary download does not work yet: the dictionary file is not published. Until it is, use an installed app or Online.
+- Highlights and Look up work in EPUB books only, not PDF or comics. There are no notes or exports yet.
+- Automated tests cover the database upgrade, shelves, highlights storage, the dictionary and the folder scan. Not yet tried by hand on a phone: shelves and selection, highlights, the selection menu (Copy may show twice), the page-turn animation (the old page may appear blank for a moment), the look-up sheet, the percentage labels, and the upgrade of a real 0.0.5-beta library. The CBR fix was checked on an emulator.
+- Dark theme inverts the colours of PDFs; turn off "PDF colours" in the reader bar for colour comics saved as PDF.
+- Password-protected PDFs and DRM-protected books cannot be opened.
+- No sync or backup yet. Not on Google Play. GitHub is the place to get Qalipi.
+
+Requires Android 8.0 (API 26) or newer.
+
 ## 0.0.5-beta (2026-11-11)
 
 First beta, and the first build signed with a real release key. The app now installs as `com.rouge.expero`.
